@@ -1,0 +1,10 @@
+Options -Indexes
+
+<FilesMatch "^(?:db_config\.local\.php|\.env|\.gitignore)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(?:sql|md|mmd)$">
+    Require all denied
+</FilesMatch>
+
